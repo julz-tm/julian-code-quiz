@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian's Code Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <h1>Julian's Code Quiz</h1>
+
+    <button id="start-btn">Start Quiz</button>
+
+    <div id="quiz-container">
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="timer">Time: <span id="time">0</span></div>
+    </div>
+
+    <div id="game-over-container" style="display: none;">
+        <h2>Game Over!</h2>
+        <label for="initials">Enter Initials:</label>
+        <input type="text" id="initials">
+        <button id="submit-score">Submit Score</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
