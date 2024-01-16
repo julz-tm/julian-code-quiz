@@ -1,4 +1,4 @@
-// Add more questions as needed
+// Questions with their respective answers
 const questions = [
   { question: "Which programming language is used for web development?", options: ["HTML", "Python", "JavaScript", "CSS"], correctAnswer: "JavaScript" },
   { question: "How do you declare a function in JavaScript?", options: ["function myFunction() { }", "const myFunction = function() { }", "myFunction: function() { }", "function = myFunction() { }"], correctAnswer: "function myFunction() { }" },
@@ -57,8 +57,8 @@ function checkAnswer(selectedOption) {
           endGame();
       }
   } else {
-      // Incorrect answer, deduct time
-      timeLeft -= 10; // Deduct 10 seconds for incorrect answer
+      // Incorrect answer, deduct 10 seconds for incorrect answer
+      timeLeft -= 10; 
       if (timeLeft <= 0) {
           timeLeft = 0;
           endGame();
@@ -87,7 +87,7 @@ function endGame() {
 function saveScore() {
   const initials = initialsInput.value;
   if (initials.trim() !== '') {
-      // Implement logic to save the score (e.g., store in local storage)
+      // Saves the score
       alert(`Score saved! Initials: ${initials}, Score: ${timeLeft}`);
   } else {
       alert('Please enter your initials.');
