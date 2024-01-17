@@ -1,5 +1,3 @@
-# julian-code-quiz
-
 Julian's Code Quiz
 
 This is a simple JavaScript quiz game that allows users to take a timed quiz on Coding fundamentals and stores users initials along with their scores.
